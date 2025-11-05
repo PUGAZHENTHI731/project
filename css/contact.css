@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root {
+  --bg-color: #302e3b;
+  --sub-bg-color: #1e1e2a;
+  --text-color: #ffffff;
+  --sub-text-color: #797993;
+  --button-color:black;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: normal;
+  background: linear-gradient(45deg, var(--bg-color) 60%, var(--sub-bg-color));
+  color: var(--text-color);
+}
+
+.menu-toggle,
+input,
+.menu-bar {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(45deg, var(--bg-color), var(--sub-bg-color));
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.7);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+nav div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav h2 {
+  margin-right: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  /* box-shadow: 0px 0px 10px  black; */
+  letter-spacing: 3px;
+}
+
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    transition: .3s;
+    padding: 3px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
+
+nav ul li :hover {
+  border-bottom: 3px solid orangered;
+  margin: auto;
+}
+
+nav ul .active {
+  border-bottom: 3px solid orangered;
+  /* margin: auto; */
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: var(--sub-bg-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container h1 {
+  display: inline-block;
+  padding: 5px;
+  border-bottom: 4px solid orangered;
+}
+
+main {
+  display: grid;
+  background-color: var(--sub-bg-color);
+  margin: 10px 0;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+  gap: 10px;
+}
+
+main .address {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid var(--sub-text-color);
+  gap: 45px;
+}
+
+.address .sec {
+  text-align: center;
+}
+
+.sec i {
+  display: inline-block;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.sec h3 {
+  margin: 5px 0 2px;
+}
+
+.sec p {
+  margin: 10px 0;
+}
+
+.form {
+  padding: 0px 50px;
+  height: 5%;
+  /* text-align: center; */
+}
+
+.form h2 {
+  padding: 10px 0 20px 0;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid white;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  /* backdrop-filter: blur(20px); */
+  margin-bottom: 40px;
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.form label {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form textarea {
+  width: 100%;
+  height: 200px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 20px;
+}
+
+.form button {
+  padding: 10px 20px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+
+.form input::placeholder {
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.form textarea::placeholder {
+  color: var(--text-color);
+  font-size: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: normal;
+}
+
+button:hover {
+  box-shadow: 2px 3px 5px white;
+  color: orangered;
+}
+
+.map {
+  margin: 10px 0;
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 17vh;
+  background-color: var(--sub-bg-color);
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+footer p {
+  padding: 5px;
+  margin: 5px;
+  /* color: var(--sub-text-color); */
+}
+
+footer p span {
+  color: var(--sub-text-color);
+  transition: 0.3s;
+}
+
+footer p span:hover {
+  color: var(--text-color);
+}
+
+footer b {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 786px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+  }
+
+  main .address {
+    flex-direction: column;
+    border: none;
+    border-bottom: 3px solid var(--sub-text-color);
+    gap: 30px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  nav > ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .menu-toggle,
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label i {
+    display: block;
+    font-size: 40px;
+    color: white;
+  }
+
+  .menu-bar {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .menu-bar ul {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--sub-text-color);
+    border-radius: 0 0 5px 5px;
+  }
+
+  .menu-bar ul li {
+    list-style: none;
+    padding: 5px 5px;
+    transition: 0.1s;
+  }
+
+  .menu-bar ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .menu-bar ul li:hover a {
+    /* background-color: var(--sub-bg-color); */
+    color: var(--sub-bg-color);
+  }
+
+  .menu-bar ul li .active {
+    color: var(--sub-bg-color);
+  }
+
+  #menu:checked ~ .menu-bar {
+    display: block;
+  }
+}
