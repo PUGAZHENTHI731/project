@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background: gray;  
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    transition:all 0.3s linear;
+}
+#btn{
+    padding:20px 10px;
+    color:black;
+    background: white;
+    cursor:pointer;
+    border:none;
+    font-size:16px;
+    transition:all .3s;
+    border-radius: 5px;
+    outline:none;
+}
+#btn:active{
+    background:black;
+    color:white;
+    box-shadow:2px 2px 10px white;
+}script.js
