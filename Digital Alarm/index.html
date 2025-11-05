@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Digital-Alarm</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1 id="head">Digital Alarm</h1>
+     <div id="box">
+          <h1 id="time">00:00:00</h1>
+          <div id="input">
+               <input type="text" class="time" id="hour" min="0" max="24" placeholder="00">
+               <input type="text" class="time" id="minute" min="0" max="60" placeholder="00">
+               <!-- <input type="text" class="time" id="second" min="0" max="12" placeholder="00"> -->
+               <input type="text" class="time" id="ampm" placeholder="AM">
+          </div>
+          <button id="timeset-btn">Set Alarm</button>
+          <audio src="alarm-sound.mp3" id="alarm-sound"></audio>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

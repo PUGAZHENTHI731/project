@@ -1,0 +1,113 @@
+
+
+@font-face {
+     font-family: "poppins";
+     src: url(Poppins/Poppins-Light.ttf );
+}
+:root{
+     --bg-color:#313647;
+     --sub-bg-color:#435663;
+     --text-color:#FFF8D4;
+     --btn-color:#A3B087;
+}
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: "poppins";
+}
+body{
+     font-family: "poppins";
+     width: 100vw;
+     height: 100vh;
+     background-color:var(--bg-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+#head{
+     text-align:center;
+     font-size: 50px;
+     font-weight: 700;
+     letter-spacing: 2px;
+     color: transparent;
+     margin: 20px;
+     background: linear-gradient(to right bottom,var(--btn-color),var(--sub-bg-color));
+     background-clip: text;
+     /* tex
+     t-shadow: 2px 2px 2px red; */
+}
+
+#box{
+     user-select: none;
+     min-width: 30%;
+     min-height: 50%;
+     overflow: hidden;
+     border: 2px solid white;
+     border-radius: 5px;
+     background-color: var(--sub-bg-color);
+     color: var(--text-color);
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+}
+
+#time{
+     text-align: center;
+     letter-spacing: 2px;
+     margin: 10px ;
+     font-size: 40px;
+}
+#input{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 30px;
+}
+#input .time{
+     width: 70px;
+     height: 50px;
+     border-radius:5px;
+     outline: none;
+     font-size: 30px;
+     margin: 0 10px;
+     padding: 5px;
+     border: 2px solid white;
+     transition: all .3s;
+}
+#input .time:hover{
+     box-shadow: 3px 5px 5px black;
+}
+#timeset-btn{
+     margin: 20px;
+     text-align: center;
+     background-color: var(--btn-color);
+     color: var(--bg-color);
+     outline: none;
+     padding: 10px 15px;
+     border: 2px solid white;
+     border-radius: 5px;
+     font-size: 20px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     transition: all 0.2s;
+     cursor: pointer;
+     
+}
+#timeset-btn:hover{
+     display: inline-block;
+     opacity: 0.8;
+     box-shadow: 3px 5px 5px black;   
+}
+#timeset-btn:active{
+     color: var(--btn-color);
+     background-color: var(--bg-color);
+     transition: .1s;
+}
