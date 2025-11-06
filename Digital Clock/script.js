@@ -25,7 +25,7 @@ function digital_clock() {
      hour_fun[0].innerHTML = (hrs>10)?(hrs>12)?hrs-12:hrs:'0'+hrs;
      min_fun[0].innerHTML = min<10?'0'+min:min;
      sec_fun[0].innerHTML = sec<10?'0'+sec:sec;
-     AMPM_fun[0].innerHTML = hrs <= 12 ? "AM" : "PM";
+     AMPM_fun[0].innerHTML = hrs < 12 ? "AM" : "PM";
      // console.log(hour_fun.innerHTML, min_fun.innerHTML, sec_fun.innerHTML);
 
 
@@ -43,3 +43,4 @@ function digital_clock() {
      // console.log(month_dis)
 }
 setInterval(digital_clock, 1000);
+
