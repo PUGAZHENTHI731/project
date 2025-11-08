@@ -319,10 +319,14 @@ footer {
     .menu-bar ul li .active{
         color: var(--sub-bg-color);
     }
-
+    .scroll{
+        width:90%;
+     }
+    
     #menu:checked~.menu-bar {
         display: block;
     }
+
 
 
 }
