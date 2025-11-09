@@ -1,0 +1,29 @@
+:root{
+     --bg-color:#56361f;
+     --sub-bg-color:#654f60;
+     --notes-color:#37262b;
+     --color:#FFFFFF;
+     --button-color:#2D0070;
+}
+
+/* 
+background:linear-gradient(to right bottom,#111111,#000001 ) ;
+     background: radial-gradient(circle,rgba(0, 0, 0, 1) 0%, rgba(32, 32, 32, 1) 58%);
+
+     background:linear-gradient(to right bottom,orangered,green);
+
+     background:#0a0a0a
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
