@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+     --bg-color: #7f8fa6;
+     --form-bg-color: #353b48;
+     --border-color: #8c7ae6;
+     --border-color: white;
+     --color: #9980FA;
+     --button-color: #718093;
+     --button-hover-color: #e84118;
+}
+
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+     width: 100vw;
+     height: 100vh;
+     background: var(--bg-color);
+     /* background: #f0f0f0; */
+     color: var(--color);
+     padding: 20PX;
+}
+
+#head {
+     font-size: 30px;
+     font-weight: 900;
+     margin: 20px 0;
+     text-align: center;
+     text-transform: uppercase;
+     background: linear-gradient(to right bottom, #EA2027, #6F1E51);
+     color: transparent;
+     background-clip: text;
+     letter-spacing: 2px;
+}
+
+#container {
+     width: 80%;
+     max-width: 400px;
+     height: auto;
+     margin: auto;
+     /* border: 2px solid var(--border-color);   */
+     border-radius: 5px;
+     overflow: hidden;
+}
+
+#form-group {
+     width: 100%;
+     padding: 20px;
+     background: var(--form-bg-color);
+}
+
+#form-group h1 {
+     text-align: center;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+}
+
+label {
+     display: block;
+     font-size: 20px;
+     margin-top: 13px;
+}
+
+input {
+     width: 100%;
+     margin: 10px 0;
+     padding: 5px;
+     border: 3px solid var(--border-color);
+     outline: none;
+     font-size: 16px;
+     border-radius: 4px;
+}
+
+p {
+     font-size: 13px;
+     visibility: hidden;
+}
+
+button {
+     padding: 7px 10px;
+     width: 100%;
+     color: white;
+     font-size: 18px;
+     font-weight: 600;
+     border: none;
+     border-radius: 5px;
+     margin-top: 10px;
+     text-transform: uppercase;
+     outline: none;
+     background: var(--button-color);
+     transition: all 0.3s;
+}
+
+button:hover {
+     /* background: white;
+     color:  var(--button-color); */
+     box-shadow: 3px 5px 10px black;
+}
+
+.sucess {
+     border-color: green;
+}
+
+.error {
+     border-color: red;
+}
+
+.p-error {
+     visibility: visible;
+     color: red;
+}
+
+@media (max-width:768px) {
+     #head {
+          font-size: 23px;
+          font-weight: 700;
+     }
+
+     #form-group h1 {
+          font-size: 20px;
+     }
+
+     label {
+          font-size: 16px;
+     }
+
+     input {
+          margin: 5px 0;
+     }
+}
