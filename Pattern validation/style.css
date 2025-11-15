@@ -40,7 +40,7 @@ body {
 
 #container {
      width: 80%;
-     max-width: 400px;
+     max-width: 500px;
      height: auto;
      margin: auto;
      /* border: 2px solid var(--border-color);   */
@@ -133,4 +133,5 @@ button:hover {
      input {
           margin: 5px 0;
      }
+
 }
