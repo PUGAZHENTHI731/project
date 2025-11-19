@@ -22,10 +22,8 @@ function Handle_Operator(operator) {
 
 // This function is handle the numbers
 function Handle_Button(key) {
-  if (initialvalue.length < 9) {
     initialvalue += key;
     output.textContent = initialvalue;
-  }
 }
 
 // This function is clear the output
@@ -115,3 +113,4 @@ back_button.addEventListener("click", Back_button);
 clear_button.addEventListener("click", Clear_Button);
 equal.addEventListener("click", calculate);
 toggle.addEventListener("click", Theme_toggle);
+
