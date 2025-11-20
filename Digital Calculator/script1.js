@@ -14,7 +14,7 @@ let initialvalue = "";
 // This function is handle the operators
 function Handle_Operator(operator) {
   let len = initialvalue.length - 1;
-  if (/[+-*/%]/.test(initialvalue[len])) {
+  if (/[+\-*/%]/.test(initialvalue[len])) {
     initialvalue = initialvalue.slice(0, -1);
   }
   Handle_Button(operator);
@@ -113,6 +113,7 @@ back_button.addEventListener("click", Back_button);
 clear_button.addEventListener("click", Clear_Button);
 equal.addEventListener("click", calculate);
 toggle.addEventListener("click", Theme_toggle);
+
 
 
 
