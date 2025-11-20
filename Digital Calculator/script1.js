@@ -46,7 +46,7 @@ function Back_button() {
 function calculate() {
   try {
     initialvalue = eval(initialvalue).toString();
-    output.textContent = initialvalue;
+    output.textContent = initialvalue || '0';
   } catch (err) {
     output.textContent = "Error";
     initialvalue = "";
@@ -113,6 +113,7 @@ back_button.addEventListener("click", Back_button);
 clear_button.addEventListener("click", Clear_Button);
 equal.addEventListener("click", calculate);
 toggle.addEventListener("click", Theme_toggle);
+
 
 
 
