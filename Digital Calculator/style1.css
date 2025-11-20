@@ -87,6 +87,7 @@ nav h1 {
      display: flex;
      align-items: center;
      justify-content:flex-end;
+     flex-wrap: nowrap;
 }
 
 #keypad {
@@ -139,3 +140,4 @@ nav h1 {
      grid-column: 1 / 3;
 
 }
+
