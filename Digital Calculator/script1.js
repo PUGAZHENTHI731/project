@@ -34,7 +34,7 @@ function Clear_Button() {
 
 // This function is handle backspace
 function Back_button() {
-  if (initialvalue.length > 0) {
+  if (initialvalue.length > 1) {
     initialvalue = initialvalue.slice(0, -1);
     output.textContent = initialvalue;
   } else {
@@ -113,6 +113,7 @@ back_button.addEventListener("click", Back_button);
 clear_button.addEventListener("click", Clear_Button);
 equal.addEventListener("click", calculate);
 toggle.addEventListener("click", Theme_toggle);
+
 
 
 
