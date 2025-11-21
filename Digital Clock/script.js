@@ -34,7 +34,7 @@ function digital_clock() {
      let month_fun = document.getElementsByClassName("month-day");
      let year_fun = document.getElementsByClassName("year-day");
      date_fun[0].innerHTML = date<10?'0'+date:date;
-     month_fun[0].innerHTML = month<10?'0'+month:month;
+     month_fun[0].innerHTML = month<10?'0'+(month+1):month+1;
      year_fun[0].innerHTML = year<10?'0'+year:year;
 
      // month manipulation
@@ -43,5 +43,6 @@ function digital_clock() {
      // console.log(month_dis)
 }
 setInterval(digital_clock, 1000);
+
 
 
