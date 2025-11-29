@@ -83,6 +83,14 @@ body{
 .btn:active{
      background:#486fee;
 }
+p{
+     text-align:center;
+     color:red;
+     padding:2px;
+}
+b{
+     color:blue;
+}
 
 @media  screen and (max-width:576px) {
      .btn{
@@ -97,4 +105,5 @@ body{
      font-size: 15px;
      }
      
+
 }
