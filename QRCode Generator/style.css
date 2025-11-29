@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body{
+     width: 100vw;
+     height: 100vh;
+     background: radial-gradient(#da4bd2 ,#486fee);
+     /* background: linear-gradient(to right bottom ,#da4bd2 45% ,#486fee); */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.container{
+     min-width: 40%;
+     max-width: 600px;
+     min-height: 300px;
+     /* max-height: 600px; */
+     padding: 25px;
+     border: 1px solid white;
+     border-radius: 5px ;
+     margin: 20px 10px;
+     backdrop-filter: blur(10px);
+}
+#head{
+     text-align: center;
+     font-size: 30px;
+     letter-spacing: 2px;
+     color: #fff;
+     margin-bottom: 10px;
+}
+#image{
+     display: block;
+     width: 200px;
+     height: 200px;
+     margin: 10px auto;
+}
+#input-box{
+     width: 100%;
+     /* margin: 20px 0; */
+     padding: 10px 0;
+}
+#input-box .input{
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     font-size: 20px;
+     color: black;
+}
+#btn-box{
+     width: 100%;
+     padding: 10px 0;
+}
+.btn{
+     padding: 10px 20px;
+     font-size: 17px;
+     font-weight: 600;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     margin-right: 20px;
+     background-color: #34a797;
+     transition: all 0.2s ;
+     color: white;
+}
+.btn{
+    opacity: 1;
+}
+.btn:hover{
+     transform: translateY(-2px);
+     box-shadow: 2px 3px 5px #000;
+}
+.btn:active{
+     background:#486fee;
+}
+
+@media  screen and (max-width:576px) {
+     .btn{
+          width: 100%;
+          margin-bottom: 10px;
+     }
+     #head{
+          font-size: 25px;
+     }
+     #input-box .input{
+     padding: 5px;
+     font-size: 15px;
+     }
+     
+}
