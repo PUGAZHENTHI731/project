@@ -37,9 +37,11 @@ const QRCode = () => {
           <button className='btn' onClick={HandleGenarate}>QR Code Genarate</button>
           <button className='btn' onClick={HandleDownload}  >Download QR Code</button>
      </div>
+         <p>Developed by<b>PUGAZHENTHI</b></p>
     </div>
   )
 }
 
 export default QRCode
+
 
