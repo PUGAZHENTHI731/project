@@ -1,0 +1,39 @@
+
+Icon list
+Day icon	Night icon	Description
+01d 	01n 	clear sky
+02d 	02n 	few clouds
+03d 	03n 	scattered clouds
+04d 	04n 	broken clouds
+09d 	09n 	shower rain
+10d 	10n 	rain
+11d 	11n 	thunderstorm
+13d 	13n 	snow
+50d 	50n 	mist
+Weather condition codes
+
+WiDaySunny, WiNightClear, WiDayCloudy, WiNightAltCloudy, WiCloud, WiCloudy, WiShowers,
+  WiRain, WiDayRain, WiNightAltRain, Thunderstorm, WiSnow,
+  WiFog,
+
+const data = [
+     {01d :WiDaySunny},
+     {01n :WiNightClear},
+     {02d :WiDayCloudy},
+     {02n :WiNightAltCloudy},
+     {03d :'WiCloud'},
+     {03n :'WiCloud},
+     {04d :'WiCloudy},
+     {04n :'WiCloudy'},
+     {09n :'WiShowers'},
+     {09n :'WiShowers'},
+     {10d :'WiDayRain'},
+     {10n :'WiNightAltRain'},
+     {11d :'WiThunderstorm'},
+     {11n :'WiThunderstorm'},
+     {13d :'WiSnow'},
+     {13n :'WiSnow'},
+     {50d :'WiFog'},
+     {50n :'WiFog'}
+];   
+     
